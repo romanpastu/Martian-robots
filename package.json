@@ -1,0 +1,20 @@
+{
+  "name": "Martian-robots",
+  "version": "1.0.0",
+  "description": "Here we present a problem to solve. We will value the use of tests for the code challenge resolution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romanpastu/Martian-robots.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romanpastu/Martian-robots/issues"
+  },
+  "homepage": "https://github.com/romanpastu/Martian-robots#readme"
+}
