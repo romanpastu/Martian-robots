@@ -1,3 +1,8 @@
+### How to run
+1. Clone the repository
+2. If desired, adjust the input in the input.js file
+3. Execut the command ```npm run start```
+
 # Martian robots
 Here we present a problem to solve. We will value the use of tests for the code challenge resolution.
 
