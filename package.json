@@ -4,7 +4,8 @@
   "description": "Here we present a problem to solve. We will value the use of tests for the code challenge resolution.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node robots.js"
   },
   "repository": {
     "type": "git",
