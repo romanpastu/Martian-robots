@@ -1,14 +1,14 @@
-const {input, printFinalPositions, checkInput} = require("./input") 
-const {isMovementOutOfBounds, isMovementForbidden} = require("./utils")
+const { input, printFinalPositions, checkInput } = require("./input")
+const { isMovementOutOfBounds, isMovementForbidden } = require("./utils")
 
-try{
+try {
   checkInput(input)
-}catch(err){
-  if(err == "Error: Maximum value for any coordinate is 50"){
+} catch (err) {
+  if (err == "Error: Maximum value for any coordinate is 50") {
     console.log("Error: the maximum value for any coordinate is 50")
     return 0;
   }
-  if(err == "Error: All instruction strings will be less than 100 characters in length"){
+  if (err == "Error: All instruction strings will be less than 100 characters in length") {
     console.log("Error: All instruction strings will be less than 100 characters in length")
     return 0;
   }
@@ -111,9 +111,7 @@ for (let i = 1; i < input.length; i++) {
   } else {
     finalPositions.push(position);
   }
-
-  position = [];
-  alternativePosition = [];
+  
   outOfBounds = false;
 }
 
