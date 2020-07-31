@@ -113,6 +113,7 @@ for (let i = 1; i < input.length; i++) {
   }
 
   position = [];
+  alternativePosition = [];
   outOfBounds = false;
 }
 
