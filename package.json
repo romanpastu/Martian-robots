@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/romanpastu/Martian-robots/issues"
   },
-  "homepage": "https://github.com/romanpastu/Martian-robots#readme"
+  "homepage": "https://github.com/romanpastu/Martian-robots#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
 }
