@@ -4,7 +4,7 @@
   "description": "Here we present a problem to solve. We will value the use of tests for the code challenge resolution.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha tests/*.js --reporter spec",
     "start": "node robots.js"
   },
   "repository": {
@@ -22,5 +22,9 @@
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.0"
   }
 }

@@ -22,7 +22,7 @@ let outOfBounds = false;
 function processMovement(forbiddenMovements, initialPosition, newPosition) {
   if (isMovementForbidden(forbiddenMovements, initialPosition, newPosition)) {
     return initialPosition;
-  } if (isMovementOutOfBounds(newPosition)) {
+  } if (isMovementOutOfBounds(newPosition, input)) {
     forbiddenMovements.push([initialPosition, newPosition]);
     outOfBounds = true;
     return initialPosition;
@@ -111,7 +111,7 @@ for (let i = 1; i < input.length; i++) {
   } else {
     finalPositions.push(position);
   }
-  
+
   outOfBounds = false;
 }
 

@@ -1,6 +1,6 @@
 const { input } = require('./input');
 
-function isMovementOutOfBounds(newPosition) {
+function isMovementOutOfBounds(newPosition, input) {
   if (newPosition[0] > input[0][0] || newPosition[0] < 0 || newPosition[1] > input[0][1] || newPosition[1] < 0) {
     return true;
   }
