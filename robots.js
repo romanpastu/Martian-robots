@@ -1,6 +1,7 @@
 const { input, printFinalPositions, checkInput } = require("./input")
 const { isMovementOutOfBounds, isMovementForbidden } = require("./utils")
 
+//checks the input of the app before running it
 try {
   checkInput(input)
 } catch (err) {
@@ -18,7 +19,7 @@ try {
 const forbiddenMovements = [];
 let outOfBounds = false;
 
-
+//checks the validity of the newMovement
 function processMovement(forbiddenMovements, initialPosition, newPosition) {
   if (isMovementForbidden(forbiddenMovements, initialPosition, newPosition)) {
     return initialPosition;
@@ -29,6 +30,7 @@ function processMovement(forbiddenMovements, initialPosition, newPosition) {
   }
 }
 
+//decides the next position 
 function move(position, movement) {
   const initialPosition = [...position];
   const newPosition = [...position];
@@ -90,9 +92,11 @@ function move(position, movement) {
   return position;
 }
 
-const finalPositions = [];
-let position = [];
-let alternativePosition = [];
+const finalPositions = []; //the composition of lost and non lost positions
+let position = []; //the positions who dont belong to lost positions
+let alternativePosition = []; //alternative positions are the one filled when lost
+
+//The main code block that processes the input file
 for (let i = 1; i < input.length; i++) {
   position = input[i][0];
   for (const j in input[i][1]) {
