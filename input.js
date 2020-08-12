@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable linebreak-style */
 /*
 Sample input
 
@@ -50,7 +52,7 @@ function checkInstructionLength(values) {
 }
 
 function checkInput(values) {
-  if (values[0][0] > 50 | values[0][1] > 50) {
+  if (values[0][0] > 50 || values[0][1] > 50) {
     throw new Error('Maximum value for any coordinate is 50');
   }
   checkInstructionLength(values);
