@@ -1,9 +1,17 @@
-### How to run
+### How to run locally
 1. Clone the repository
 2. Run ```npm i```
 3. If desired, adjust the input in the input.js file
 4. Execute the command ```npm run start```
 5. Execute ```npm run test``` to run tests
+
+## How to run docker container
+Url: https://hub.docker.com/r/romancc/martian-robots --> App image
+Url: https://hub.docker.com/r/romancc/martian-robots-test --> Test image
+1. Add the image to your docker using:
+```docker pull romancc/martian-robots```
+2. Then run the following command: ```docker run romancc/martian-robots```
+3. Do the same for the testing image
 
 # Martian robots
 Here we present a problem to solve. We will value the use of tests for the code challenge resolution.
